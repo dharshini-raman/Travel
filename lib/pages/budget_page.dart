@@ -14,7 +14,7 @@ class _BudgetPageState extends State<BudgetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: grey.withOpacity(0.05),
+      backgroundColor: primary.withOpacity(0.00001),
       body: getBody(),
     );
   }
@@ -26,9 +26,9 @@ class _BudgetPageState extends State<BudgetPage> {
       child: Column(
         children: [
           Container(
-            decoration: BoxDecoration(color: white, boxShadow: [
+            decoration: BoxDecoration(color: primary, boxShadow: [
               BoxShadow(
-                color: grey.withOpacity(0.01),
+                color: primary.withOpacity(0.01),
                 spreadRadius: 10,
                 blurRadius: 3,
                 // changes position of shadow
@@ -89,7 +89,7 @@ class _BudgetPageState extends State<BudgetPage> {
                                 Container(
                                   decoration: BoxDecoration(
                                       color: activeDay == index
-                                          ? primary
+                                          ? white
                                           : black.withOpacity(0.02),
                                       borderRadius: BorderRadius.circular(5),
                                       border: Border.all(
@@ -105,7 +105,7 @@ class _BudgetPageState extends State<BudgetPage> {
                                           fontSize: 10,
                                           fontWeight: FontWeight.w600,
                                           color: activeDay == index
-                                              ? white
+                                              ? primary
                                               : black),
                                     ),
                                   ),
@@ -135,7 +135,7 @@ class _BudgetPageState extends State<BudgetPage> {
                       borderRadius: BorderRadius.circular(12),
                       boxShadow: [
                         BoxShadow(
-                          color: grey.withOpacity(0.01),
+                          color: primary.withOpacity(0.01),
                           spreadRadius: 10,
                           blurRadius: 3,
                           // changes position of shadow
