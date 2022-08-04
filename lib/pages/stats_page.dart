@@ -28,16 +28,16 @@ class _StatsPageState extends State<StatsPage> {
 
     List expenses = [
       {
-        "icon": Icons.arrow_back,
+        "icon": Icons.add_card,
         "color": blue,
-        "label": "Income",
-        "cost": "\$6593.75"
+        "label": "2X Miles",
+        "cost": "Capital One Venture"
       },
       {
         "icon": Icons.arrow_forward,
         "color": red,
-        "label": "Expense",
-        "cost": "\$2645.50"
+        "label": "1.5X Miles",
+        "cost": "Capital One VentureOne"
       }
     ];
     return SingleChildScrollView(
@@ -157,7 +157,7 @@ class _StatsPageState extends State<StatsPage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Net balance",
+                            "Highest Spending Category:",
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 13,
@@ -167,10 +167,12 @@ class _StatsPageState extends State<StatsPage> {
                             height: 10,
                           ),
                           Text(
-                            "\$2446.90",
+                            "Transportation",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 25,
+                              color: Color(0xff004977),
+
                             ),
                           )
                         ],
@@ -219,14 +221,17 @@ class _StatsPageState extends State<StatsPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          width: 40,
-                          height: 40,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: expenses[index]['color']),
+                          width: 400,
+                          height: 50,
+                      decoration: BoxDecoration(
+                          shape: BoxShape.rectangle,
+                          image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://ecm.capitalone.com/WCM/card/products/venture-card-art/mobile.png")
+                              )),
                           child: Center(
                               child: Icon(
-                            expenses[index]['icon'],
+                            expenses[index]['image'],
                             color: white,
                           )),
                         ),
@@ -241,13 +246,14 @@ class _StatsPageState extends State<StatsPage> {
                                   color: Color(0xff67727d)),
                             ),
                             SizedBox(
-                              height: 8,
+                              height: 5,
+                              width: 15,
                             ),
                             Text(
                               expenses[index]['cost'],
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 20,
+                                fontSize: 15,
                               ),
                             )
                           ],

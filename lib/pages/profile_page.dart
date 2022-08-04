@@ -45,7 +45,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "Profile",
+                        "Account",
                         style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
@@ -93,6 +93,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                       ),
                       Container(
+
                         width: (size.width - 40) * 0.6,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
@@ -123,6 +124,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     height: 25,
                   ),
                   Container(
+
                     width: double.infinity,
                     decoration: BoxDecoration(
                         color: primary,
@@ -142,6 +144,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Column(
+
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
@@ -163,7 +166,9 @@ class _ProfilePageState extends State<ProfilePage> {
                               ),
                             ],
                           ),
+
                           Container(
+
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10),
                                 border: Border.all(color: white)),
@@ -187,6 +192,7 @@ class _ProfilePageState extends State<ProfilePage> {
             height: 50,
           ),
           Padding(
+
             padding: const EdgeInsets.only(left: 20, right: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -243,11 +249,14 @@ class _ProfilePageState extends State<ProfilePage> {
                   decoration: InputDecoration(
                       hintText: "Password", border: InputBorder.none),
                 ),
+
               ],
             ),
           )
         ],
+
       ),
+
     );
   }
 }

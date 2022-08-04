@@ -12,7 +12,7 @@ class _CreatBudgetPageState extends State<CreatBudgetPage> {
   int activeCategory = 0;
   TextEditingController _budgetName =
       TextEditingController(text: "Grocery Budget");
-  TextEditingController _budgetPrice = TextEditingController(text: "\$1500.00");
+  TextEditingController _budgetPrice = TextEditingController(text: "\$60.00");
   @override
   Widget build(BuildContext context) {
     return Scaffold(

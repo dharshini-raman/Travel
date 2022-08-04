@@ -1,32 +1,32 @@
 const List daily = [
   {
     "icon": "assets/images/bank.png",
-    "name": "Bank",
+    "name": "The CIA Museum",
     "date": "Fri 10AM",
-    "price": "\$340.00"
+    "price": "\$10.00"
   },
   {
     "icon": "assets/images/auto.png",
-    "name": "Automobile",
+    "name": "Uber",
     "date": "Mon 8AM",
-    "price": "\$70.00"
+    "price": "\$20.00"
   },
   {
     "icon": "assets/images/gift.png",
-    "name": "Gift",
+    "name": "Fairfax Pediatrics Donation",
     "date": "Sat 6PM",
-    "price": "\$110.00"
+    "price": "\$50.00"
   },
   {
     "icon": "assets/images/eating.png",
-    "name": "Eating",
+    "name": "Wegmans",
     "date": "Sun 5PM",
     "price": "\$60.00"
   },
   {
     "icon": "assets/images/charity.png",
-    "name": "Charity",
+    "name": "Tyson's Mall",
     "date": "Wed 12PM",
-    "price": "\$1200.00"
+    "price": "\$200.00"
   }
 ];

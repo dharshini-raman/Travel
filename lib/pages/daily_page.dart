@@ -14,7 +14,7 @@ class _DailyPageState extends State<DailyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: grey.withOpacity(0.05),
+      backgroundColor: white.withOpacity(0.5),
       body: getBody(),
     );
   }
@@ -25,7 +25,7 @@ class _DailyPageState extends State<DailyPage> {
       child: Column(
         children: [
           Container(
-            decoration: BoxDecoration(color: white, boxShadow: [
+            decoration: BoxDecoration(color: primary, boxShadow: [
               BoxShadow(
                 color: grey.withOpacity(0.01),
                 spreadRadius: 10,
@@ -178,7 +178,7 @@ class _DailyPageState extends State<DailyPage> {
                               style: TextStyle(
                                   fontWeight: FontWeight.w600,
                                   fontSize: 15,
-                                  color: Colors.green),
+                                  color: Colors.red),
                             ),
                           ],
                         ),
@@ -218,7 +218,7 @@ class _DailyPageState extends State<DailyPage> {
                 Padding(
                   padding: const EdgeInsets.only(top: 5),
                   child: Text(
-                    "\$1780.00",
+                    "\$340.00",
                     style: TextStyle(
                         fontSize: 20,
                         color: black,

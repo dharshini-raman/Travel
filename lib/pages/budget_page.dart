@@ -14,7 +14,7 @@ class _BudgetPageState extends State<BudgetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: primary.withOpacity(0.00001),
+      backgroundColor: red,
       body: getBody(),
     );
   }

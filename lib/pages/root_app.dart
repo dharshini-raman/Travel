@@ -47,7 +47,7 @@ class _RootAppState extends State<RootApp> {
               Icons.add,
               size: 25,
             ),
-            backgroundColor: Colors.pink
+            backgroundColor: Color(0xffd03027)
             //params
             ),
         floatingActionButtonLocation:
